@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Assembly code generated and saved as $filename.s"
+gcc -S -masm=intel "$CFILE" -o "$filename.s"
